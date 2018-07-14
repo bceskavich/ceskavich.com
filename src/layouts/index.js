@@ -2,11 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
-import Header from '../components/header'
 
-const AppContainer = styled.div`
-  font-family: Source-Sans Pro;
-`
+import 'normalize.css'
 
 const Layout = ({ children, data }) => (
   <AppContainer>
@@ -17,7 +14,6 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' }
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
     {children()}
   </AppContainer>
 )
