@@ -1,14 +1,16 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
 
-const Header = ({ siteTitle }) => (
+const Header = styled.h1`
+  color: steelblue;
+  font-style: bold;
+`
+
+export default ({ siteTitle }) => (
   <div>
-    <div>
-      <h1>
-        <Link to="/">{siteTitle}</Link>
-      </h1>
-    </div>
+    <Header>
+      <Link to="/">{siteTitle}</Link>
+    </Header>
   </div>
 )
-
-export default Header
