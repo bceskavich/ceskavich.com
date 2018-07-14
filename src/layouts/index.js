@@ -1,28 +1,21 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import styled from 'styled-components'
+import React from 'react';
+import PropTypes from 'prop-types';
+import SiteHead from '../components/SiteMeta';
 
-import 'normalize.css'
+import 'normalize.css';
 
 const Layout = ({ children, data }) => (
-  <AppContainer>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' }
-      ]}
-    />
+  <div>
+    <SiteHead title={data.site.siteMetadata.title} />
     {children()}
-  </AppContainer>
-)
+  </div>
+);
 
 Layout.propTypes = {
   children: PropTypes.func
-}
+};
 
-export default Layout
+export default Layout;
 
 export const query = graphql`
   query SiteTitleQuery {
@@ -32,4 +25,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
