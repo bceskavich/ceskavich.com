@@ -1,8 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { accentColor } from '../constants/styles';
 
 const Title = styled.h1`
   font-size: 50px;
+`;
+
+const Name = styled.span`
+  border-bottom: 6px solid ${accentColor};
 `;
 
 const AboutChunk = styled.div`
@@ -20,7 +25,9 @@ const LinksList = styled.ul`
 
 export default () => (
   <div>
-    <Title>Hey, it's Billy!</Title>
+    <Title>
+      Hey, it's <Name>Billy!</Name>
+    </Title>
     <AboutChunk>
       I am a full-stack engineer at{' '}
       <a href="https://product.voxmedia.com/pages/our-team">Vox Media</a>. For
