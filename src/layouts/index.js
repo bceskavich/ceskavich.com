@@ -11,8 +11,10 @@ const AppContainer = styled.div`
     sans-serif;
   max-width: 1024px;
   margin: 75px auto 0px auto;
-  padding: 0px 15px;
   color: ${baseColor};
+  @media screen and (max-width: 1099px) {
+    padding: 0px 25px;
+  }
   a {
     color: ${accentColor};
     &:visited {

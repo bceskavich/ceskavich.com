@@ -6,10 +6,12 @@ import ResumeSection from '../components/ResumeSection';
 const ResumeContentContainer = styled.div`
   margin-top: 50px;
   margin-bottom: 25px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1100px) {
     display: grid;
     grid-template-columns: 40% 60%;
-    column-gap: 25px;
+    div:last-child {
+      margin-left: 30px;
+    }
   }
 `;
 
