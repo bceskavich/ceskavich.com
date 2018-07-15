@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Link from 'gatsby-link';
 import { accentColor } from '../constants/styles';
 
 const Title = styled.h1`
@@ -44,6 +45,11 @@ export default () => (
       held internships at <a href="http://www.madebymany.com/">Made by Many</a>,{' '}
       <a href="https://twitter.com/">Twitter</a>, and{' '}
       <a href="https://evernote.com/">Evernote</a>.
+    </AboutChunk>
+    <AboutChunk>
+      You can head to my <Link to="/projects">projects page</Link> to see some
+      highlights of my work. Or, check out my <Link to="/resume">resume</Link>{' '}
+      for a more formal, detailed review of my experience.
     </AboutChunk>
     <AboutChunk>
       My email is{' '}

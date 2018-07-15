@@ -1,14 +1,12 @@
 module.exports = {
   education: [
     {
-      company: null,
       title: 'M.S. Information Management',
       location: 'Syracuse University',
       date: 'Graduated Dec 2015',
       bullets: ['Engagement Fellow']
     },
     {
-      company: null,
       title: 'B.S. Information Management\nB.A. Political Science',
       location: 'Syracuse University',
       date: 'Graduated May 2014',
@@ -18,16 +16,38 @@ module.exports = {
       ]
     }
   ],
+  skills: [
+    {
+      title: 'Languages',
+      bullets: ['JavaScript', 'Ruby', 'Python', 'Elixir']
+    },
+    {
+      title: 'Front-End Framworks',
+      bullets: ['React', 'Vue', 'Ractive', 'GatsbyJS']
+    },
+    {
+      title: 'Back-End Frameworks & Tools',
+      bullets: [
+        'Express',
+        'Bookshelf',
+        'Knex',
+        'Ruby on Rails',
+        'Elasticsearch',
+        'Redis',
+        'MySQL'
+      ]
+    }
+  ],
   experience: [
     {
-      company: '[Vox Media](http://product.voxmedia.com/)',
+      company: '[Vox Media](https://product.voxmedia.com/)',
       title: 'Full-Stack Engineer 2',
       location: 'New York City',
       date: 'June 2017 – Present',
       bullets: ['TK']
     },
     {
-      company: '[Vox Media](http://product.voxmedia.com/)',
+      company: '[Vox Media](https://product.voxmedia.com/)',
       title: 'Full-Stack Engineer',
       location: 'New York City',
       date: 'February 2016 – June 2017',

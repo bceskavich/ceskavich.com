@@ -31,16 +31,12 @@ export default class ResumeItem extends Component {
   };
 
   render() {
-    let { company, title, location, date, bullets } = this.props;
-
     return (
       <div>
         {this.renderTitle()}
-        <When>
-          {location} / {date}
-        </When>
+        {this.renderWhen()}
         <DetailsList>
-          {bullets.map((bullet, index) => (
+          {this.props.bullets.map((bullet, index) => (
             <li key={index}>
               <Markdown source={bullet} />
             </li>
@@ -51,14 +47,14 @@ export default class ResumeItem extends Component {
   }
 
   renderTitle() {
-    let { company, title } = this.props;
-    if (company) {
+    let { type, company, title } = this.props;
+    if (type === 'Experience') {
       return (
         <Title>
           <Markdown source={`${company} / ${title}`} />
         </Title>
       );
-    } else {
+    } else if (type === 'Education') {
       return (
         <Title>
           {title
@@ -67,5 +63,18 @@ export default class ResumeItem extends Component {
         </Title>
       );
     }
+    return <Title>{title}</Title>;
+  }
+
+  renderWhen() {
+    let { type, location, date } = this.props;
+    if (type === 'Skills') {
+      return null;
+    }
+    return (
+      <When>
+        {location} / {date}
+      </When>
+    );
   }
 }

@@ -2,15 +2,31 @@ import React from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
 import ResumeSection from '../components/ResumeSection';
+import HomeLink from '../components/HomeLink';
 
 const ResumeContentContainer = styled.div`
-  margin-top: 50px;
   margin-bottom: 25px;
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 710px) {
     display: grid;
-    grid-template-columns: 40% 60%;
-    div:last-child {
-      margin-left: 30px;
+  }
+  @media screen and (min-width: 710px) and (max-width: 850px) {
+    grid-template-columns: 48% 4% 48%;
+    .skills {
+      grid-column: 3;
+    }
+    .experience {
+      grid-column: 1 / span 3;
+    }
+  }
+  @media screen and (min-width: 851px) {
+    grid-template-columns: 38% 4% 58%;
+    grid-template-rows: 1fr 4fr;
+    .skills {
+      grid-row: 2;
+    }
+    .experience {
+      grid-row: 1 / span 2;
+      grid-column: 3;
     }
   }
 `;
@@ -18,13 +34,15 @@ const ResumeContentContainer = styled.div`
 export default ({ data }) => {
   return (
     <div>
-      <div>
-        <Link to="/">&larr; Home</Link>
-      </div>
+      <HomeLink />
       <ResumeContentContainer>
         <ResumeSection
           sectionTitle="Education"
           content={data.site.siteMetadata.resume.education}
+        />
+        <ResumeSection
+          sectionTitle="Skills"
+          content={data.site.siteMetadata.resume.skills}
         />
         <ResumeSection
           sectionTitle="Experience"
@@ -44,6 +62,10 @@ export const query = graphql`
             title
             location
             date
+            bullets
+          }
+          skills {
+            title
             bullets
           }
           experience {
