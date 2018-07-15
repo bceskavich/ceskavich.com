@@ -28,7 +28,7 @@ const LinksList = styled.ul`
 export default ({ data }) => (
   <div>
     <Title>
-      Hey, it's <Name>Billy!</Name>
+      Hey, it’s <Name>Billy!</Name>
     </Title>
     {data.site.siteMetadata.intro.map((item, index) => (
       <AboutChunk>
