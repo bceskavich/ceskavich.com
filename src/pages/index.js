@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
 import { accentColor } from '../constants/styles';
+import Markdown from '../components/Markdown';
 
 const Title = styled.h1`
   font-size: 50px;
@@ -24,28 +25,16 @@ const LinksList = styled.ul`
   }
 `;
 
-export default () => (
+export default ({ data }) => (
   <div>
     <Title>
       Hey, it's <Name>Billy!</Name>
     </Title>
-    <AboutChunk>
-      I am a full-stack engineer at{' '}
-      <a href="https://product.voxmedia.com/pages/our-team">Vox Media</a>. For
-      over 2 years, I've worked on all parts of our proprietary CMS. Some key
-      contributions include: a large chunk of user-facing features in our
-      editor, which I helped rewrite; our content search infrastructure; user
-      authentication and authorization systems.
-    </AboutChunk>
-    <AboutChunk>
-      Previously, I worked as a research assistant at{' '}
-      <a href="http://bits.ischool.syr.edu/">BITS Lab</a> at the Syracuse
-      University <a href="https://ischool.syr.edu/">iSchool</a> for 1.5 years,
-      where I wrote software to collect and analyze social media data. I've also
-      held internships at <a href="http://www.madebymany.com/">Made by Many</a>,{' '}
-      <a href="https://twitter.com/">Twitter</a>, and{' '}
-      <a href="https://evernote.com/">Evernote</a>.
-    </AboutChunk>
+    {data.site.siteMetadata.intro.map((item, index) => (
+      <AboutChunk>
+        <Markdown key={index} source={item} />
+      </AboutChunk>
+    ))}
     <AboutChunk>
       You can head to my <Link to="/projects">projects page</Link> to see some
       highlights of my work. Or, check out my <Link to="/resume">resume</Link>{' '}
@@ -68,6 +57,19 @@ export default () => (
       <li>
         <a href="https://twitter.com/ceskavich">Twitter</a>
       </li>
+      <li>
+        <a href="https://www.linkedin.com/in/ceskavich/">LinkedIn</a>
+      </li>
     </LinksList>
   </div>
 );
+
+export const query = graphql`
+  query IntroQuery {
+    site {
+      siteMetadata {
+        intro
+      }
+    }
+  }
+`;
