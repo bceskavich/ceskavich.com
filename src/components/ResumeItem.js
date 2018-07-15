@@ -1,6 +1,26 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Markdown from './Markdown';
+
+const Title = styled.h2`
+  font-size: 22px;
+  margin-bottom: 0px;
+`;
+
+const When = styled.h3`
+  font-size: 18px;
+  margin-top: 10px;
+  font-style: italic;
+  font-weight: 400;
+`;
+
+const DetailsList = styled.ul`
+  margin-bottom: 25px;
+  li {
+    line-height: 1.5;
+  }
+`;
 
 export default class ResumeItem extends Component {
   static propTypes = {
@@ -16,16 +36,16 @@ export default class ResumeItem extends Component {
     return (
       <div>
         {this.renderTitle()}
-        <h3>
+        <When>
           {location} / {date}
-        </h3>
-        <ul>
+        </When>
+        <DetailsList>
           {bullets.map((bullet, index) => (
             <li key={index}>
               <Markdown source={bullet} />
             </li>
           ))}
-        </ul>
+        </DetailsList>
       </div>
     );
   }
@@ -34,17 +54,17 @@ export default class ResumeItem extends Component {
     let { company, title } = this.props;
     if (company) {
       return (
-        <h2>
+        <Title>
           <Markdown source={`${company} / ${title}`} />
-        </h2>
+        </Title>
       );
     } else {
       return (
-        <h2>
+        <Title>
           {title
             .split('\n')
             .map((titleItem, index) => <div key={index}>{titleItem}</div>)}
-        </h2>
+        </Title>
       );
     }
   }

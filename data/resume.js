@@ -21,9 +21,16 @@ module.exports = {
   experience: [
     {
       company: '[Vox Media](http://product.voxmedia.com/)',
-      title: 'Full Stack Engineer',
+      title: 'Full-Stack Engineer 2',
       location: 'New York City',
-      date: 'February 2016 - Present',
+      date: 'June 2017 – Present',
+      bullets: ['TK']
+    },
+    {
+      company: '[Vox Media](http://product.voxmedia.com/)',
+      title: 'Full-Stack Engineer',
+      location: 'New York City',
+      date: 'February 2016 – June 2017',
       bullets: [
         'Building Anthem, a collaborative rich text editor for Vox Media’s \
         Chorus publishing platform',
@@ -39,7 +46,7 @@ module.exports = {
       company: '[Made by Many](http://www.madebymany.com/)',
       title: 'Product Engineering Intern',
       location: 'New York City',
-      date: 'May 2015 - August 2015',
+      date: 'May 2015 – August 2015',
       bullets: [
         'Built [HelloBacker](http://www.hellobacker.com/), an application for \
         matching event planners and sponsors, as part of an intern product \
@@ -56,7 +63,7 @@ module.exports = {
       company: '[BITS Lab](http://bits.ischool.syr.edu/)',
       title: 'Developer',
       location: 'Syracuse, NY',
-      date: 'September 2014 - December 2015',
+      date: 'September 2014 – December 2015',
       bullets: [
         'Lead developer of [STACKS](https://github.com/bitslabsyr/stack), a \
         toolkit written in Python for researchers to collect and analyze large \
@@ -72,7 +79,7 @@ module.exports = {
       company: '[Twitter](https://about.twitter.com/)',
       title: 'Technical Program Manager Intern',
       location: 'San Francisco, CA',
-      date: 'May 2014 - August 2014',
+      date: 'May 2014 – August 2014',
       bullets: [
         'Lead cross-functional teams in Twitter’s Consumer Product Engineering \
         group to deliver strategic projects and programs in an Agile \
@@ -88,7 +95,7 @@ module.exports = {
       company: '[Hack Upstate](http://www.hackupstate.com/)',
       title: 'Fellow',
       location: 'Syracuse, NY',
-      date: 'June 2014 - May 2015',
+      date: 'June 2014 – May 2015',
       bullets: [
         'Organize Hack Upstate’s biannual hackathon in Syracuse, New York',
         'Lead partner relations with AT&T, collaborating to produce four \
@@ -101,7 +108,7 @@ module.exports = {
       company: '[Evernote](https://evernote.com/)',
       title: 'Developer Relations Intern',
       location: 'Redwood City, CA',
-      date: 'May 2013 - August 2013',
+      date: 'May 2013 – August 2013',
       bullets: [
         'Served as a project lead for the Evernote Devcup, crafting \
         communications and digital content for an international developer \
@@ -114,4 +121,4 @@ module.exports = {
       ]
     }
   ]
-}
+};
