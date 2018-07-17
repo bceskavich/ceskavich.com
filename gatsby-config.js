@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
     title: 'BC | Billy Ceskavich',
-    intro: require('./data/intro'),
     resume: require('./data/resume')
   },
   plugins: [
