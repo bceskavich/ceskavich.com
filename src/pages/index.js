@@ -60,7 +60,7 @@ export default class Index extends Component {
         <AboutChunk>
           My last name is pronounced <em>SES</em>-kah-vitch
         </AboutChunk>
-        <AboutChunk>I'm also found on your favorite websites:</AboutChunk>
+        <AboutChunk>You can find me on your favorite websites:</AboutChunk>
         <LinksList>
           <li>
             <a href="https://twitter.com/ceskavich">Twitter</a>
