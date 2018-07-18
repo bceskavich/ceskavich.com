@@ -34,9 +34,9 @@ export default class Index extends Component {
         </Title>
         <AboutChunk>
           I write software for the web. I currently work for{' '}
-          <a href="https://product.voxmedia.com/pages/our-team">Vox Media</a>,
-          where I’ve been gainfully employed as a full-stack engineer for{' '}
-          {this.getTimeFromStart()} years.
+          <a href="https://product.voxmedia.com/pages/our-team">Vox Media</a> as
+          a full-stack engineer contributing to our publishing platform{' '}
+          <a href="https://getchorus.voxmedia.com/">Chorus</a>.
         </AboutChunk>
         <AboutChunk>
           Previously, I was in school. Specifically, from 2010 – 2015 at the
@@ -77,11 +77,5 @@ export default class Index extends Component {
         </LinksList>
       </div>
     );
-  }
-
-  getTimeFromStart() {
-    let now = new Date();
-    let start = new Date('02/01/2016');
-    return ((now - start) / (1000 * 60 * 60 * 24 * 365)).toFixed(2);
   }
 }
