@@ -1,17 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import ResumeItem from './ResumeItem';
-import { accentColor } from '../constants/styles';
+import { accentColor, DynamicHeader } from '../constants/styles';
 
-const SectionTitle = styled.h1`
-  font-size: 30px;
+const SectionTitle = DynamicHeader.extend`
   border-bottom: 2px solid ${accentColor};
   padding-bottom: 10px;
 `;
 
 export default ({ sectionTitle, content }) => (
   <div className={sectionTitle.toLowerCase()}>
-    <SectionTitle>{sectionTitle}</SectionTitle>
+    <SectionTitle maxSize="30" minSize="20">
+      {sectionTitle}
+    </SectionTitle>
     {content.map(({ company, title, location, date, bullets }, index) => (
       <ResumeItem
         key={index}

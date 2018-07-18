@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
-import { accentColor } from '../constants/styles';
+import { accentColor, DynamicHeader } from '../constants/styles';
 import Markdown from '../components/Markdown';
 
-const Title = styled.h1`
-  font-size: 50px;
+const Title = DynamicHeader.extend`
+  margin-bottom: 50px;
 `;
 
 const TitleText = styled.span`
@@ -19,7 +19,7 @@ const AboutChunk = styled.div`
 `;
 
 const LinksList = styled.ul`
-  padding-left: 0;
+  padding-left: 20px;
   li {
     margin-bottom: 5px;
   }
@@ -29,7 +29,7 @@ export default class Index extends Component {
   render() {
     return (
       <div>
-        <Title>
+        <Title maxSize="50" minSize="30">
           <TitleText>Billy Ceskavich</TitleText>
         </Title>
         <AboutChunk>

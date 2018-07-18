@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Link from 'gatsby-link';
 import ResumeSection from '../components/ResumeSection';
 import HomeLink from '../components/HomeLink';
+import pdf from '../files/BillyCeskavich.pdf';
+import { DynamicHeader } from '../constants/styles';
 
 const ResumeContentContainer = styled.div`
   margin-bottom: 25px;
@@ -20,7 +22,7 @@ const ResumeContentContainer = styled.div`
   }
   @media screen and (min-width: 851px) {
     grid-template-columns: 38% 4% 58%;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     .skills {
       grid-row: 2;
     }
@@ -31,10 +33,27 @@ const ResumeContentContainer = styled.div`
   }
 `;
 
+const LinksContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Name = DynamicHeader.extend``;
+
 export default ({ data }) => {
   return (
     <div>
-      <HomeLink />
+      <LinksContainer>
+        <HomeLink />
+        <div>
+          <a href={pdf} target="_blank">
+            Download
+          </a>
+        </div>
+      </LinksContainer>
+      <Name maxSize="40" minSize="25">
+        Billy Ceskavich
+      </Name>
       <ResumeContentContainer>
         <ResumeSection
           sectionTitle="Education"

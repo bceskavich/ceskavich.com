@@ -1,20 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 import HomeLink from '../components/HomeLink';
+import { DynamicHeader } from '../constants/styles';
 
 const ProjectsContainer = styled.div`
   max-width: 600px;
 `;
 
+const Title = DynamicHeader.extend``;
+
 const DetailsChunk = styled.div`
   max-width: 600px;
   line-height: 1.5;
-  margin-bottom: 25px;
+  margin: 35px 0px;
 `;
 
 const ProjectsList = styled.ul`
-  padding-left: 0;
-  margin-bottom: 25px;
+  padding-left: 20px;
   li {
     margin-bottom: 5px;
   }
@@ -23,7 +25,9 @@ const ProjectsList = styled.ul`
 export default () => (
   <ProjectsContainer>
     <HomeLink />
-    <h1>Projects</h1>
+    <DynamicHeader maxSize="40" minSize="25">
+      Projects
+    </DynamicHeader>
     <DetailsChunk>
       Most of my recent work has been done for my current employer, Vox Media.
       I've sporadically worked on some things to say in touch etc. These
