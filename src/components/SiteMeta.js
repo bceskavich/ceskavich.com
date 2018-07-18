@@ -9,7 +9,7 @@ const SiteMeta = ({ title }) => (
       { name: 'robots', content: 'index,follow' },
       {
         name: 'description',
-        content: "Hey, my name is Billy. I'm a software engineer at Vox Media."
+        content: 'Hey, my name is Billy, and I write software for the web.'
       },
 
       // Open Graph
@@ -17,13 +17,13 @@ const SiteMeta = ({ title }) => (
       { name: 'og:site_name', content: 'Billy Ceskavich' },
       {
         name: 'og:description',
-        content: 'Software engineer at Vox Media. Baker. Cozy sock haver.'
+        content: 'I write software for the web.'
       },
-      // {
-      //   name: 'og:image',
-      //   content:
-      //     'https://pbs.twimg.com/profile_images/539474205746540544/xRLvHKUl_400x400.jpeg'
-      // },
+      {
+        name: 'og:image',
+        content:
+          'https://pbs.twimg.com/profile_images/1019431154242412544/pVFRoNBa_400x400.jpg'
+      },
       { name: 'og:url', content: 'http://www.ceskavich.com' },
 
       // Twitter
@@ -32,13 +32,13 @@ const SiteMeta = ({ title }) => (
       { name: 'twitter:creator', content: '@ceskavich' },
       {
         name: 'twitter:description',
-        content: 'Software engineer at Vox Media. Baker. Cozy sock haver.'
+        content: 'I write software for the web.'
+      },
+      {
+        name: 'twitter:image',
+        content:
+          'https://pbs.twimg.com/profile_images/1019431154242412544/pVFRoNBa_400x400.jpg'
       }
-      // {
-      //   name: 'twitter:image',
-      //   content:
-      //     'https://pbs.twimg.com/profile_images/539474205746540544/xRLvHKUl_400x400.jpeg'
-      // }
     ]}
   />
 );
