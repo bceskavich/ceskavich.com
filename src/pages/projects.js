@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import HomeLink from '../components/HomeLink';
 import { DynamicHeader } from '../constants/styles';
+import Markdown from '../components/Markdown';
 
 const ProjectsContainer = styled.div`
   max-width: 600px;
@@ -11,48 +12,57 @@ const Title = DynamicHeader.extend``;
 
 const DetailsChunk = styled.div`
   max-width: 600px;
-  line-height: 1.5;
-  margin: 35px 0px;
+  margin: 40px 0px;
 `;
 
 const ProjectsList = styled.ul`
   padding-left: 20px;
   li {
-    margin-bottom: 5px;
+    margin-bottom: 30px;
   }
 `;
 
-export default () => (
+export default ({ data }) => (
   <ProjectsContainer>
     <HomeLink />
     <DynamicHeader maxSize="40" minSize="25">
       Projects
     </DynamicHeader>
     <DetailsChunk>
-      Most of my recent work has been done for my current employer, Vox Media.
-      I've sporadically worked on some things to say in touch etc. These
-      include:
+      These days, I work on side projects sporadically at best. Here are some
+      recent things, some of which are still in the works:
     </DetailsChunk>
     <ProjectsList>
-      <li>
-        I've been working through V2 of the Rust book. I'm looking to learn
-        image processing things.
-      </li>
-      <li>Shitty Bot is a thing too</li>
-      <li>Some stuff with Elm, it didn't really take</li>
-      <li>Elixir things. Wrote an app for our company's hackathon.</li>
+      {data.site.siteMetadata.projects.recent.map((str, index) => (
+        <li key={index}>
+          <Markdown source={str} />
+        </li>
+      ))}
     </ProjectsList>
     <DetailsChunk>
-      Before this job when I was a student I did more side-project work. I had
-      free time and was actively learning. Also, internship projects. These
-      include:
+      Back when I was a student, I worked on side projects more frequently. I
+      had the time. And, I wanted to learn so many things. Some highlights from
+      the distant years of 2015 and earlier:
     </DetailsChunk>
     <ProjectsList>
-      <li>U Don't Know Me!</li>
-      <li>HelloBacker</li>
-      <li>STACKS</li>
-      <li>Drought in America</li>
-      <li>Hack Upstate</li>
+      {data.site.siteMetadata.projects.old.map((str, index) => (
+        <li key={index}>
+          <Markdown source={str} />
+        </li>
+      ))}
     </ProjectsList>
   </ProjectsContainer>
 );
+
+export const query = graphql`
+  query ProjectsQuery {
+    site {
+      siteMetadata {
+        projects {
+          recent
+          old
+        }
+      }
+    }
+  }
+`;

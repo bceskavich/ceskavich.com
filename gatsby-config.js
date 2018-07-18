@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'BC | Billy Ceskavich',
-    resume: require('./data/resume')
+    resume: require('./data/resume'),
+    projects: require('./data/projects')
   },
   plugins: [
     'gatsby-plugin-react-helmet',

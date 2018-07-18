@@ -47,9 +47,9 @@ export default class Index extends Component {
           <a href="https://evernote.com/">Evernote</a>.
         </AboutChunk>
         <AboutChunk>
-          I have a list of current and past <Link to="/projects">projects</Link>{' '}
-          that I update occasionally. You can also read over my{' '}
-          <Link to="/resume">resume</Link> here.
+          You can look through a list of my current and past{' '}
+          <Link to="/projects">projects</Link>, which I update occasionally. You
+          can also get my <Link to="/resume">resume</Link>.
         </AboutChunk>
         <AboutChunk>
           My email is{' '}
