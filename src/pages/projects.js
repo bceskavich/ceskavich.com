@@ -11,11 +11,13 @@ const ProjectsContainer = styled.div`
 const Title = DynamicHeader.extend``;
 
 const DetailsChunk = styled.div`
+  line-height: 1.5;
   max-width: 600px;
   margin: 40px 0px;
 `;
 
 const ProjectsList = styled.ul`
+  line-height: 1.25;
   padding-left: 20px;
   li {
     margin-bottom: 30px;
