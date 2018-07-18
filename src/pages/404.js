@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Link from 'gatsby-link';
 
-const NotFoundPage = () => (
+export default () => (
   <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <h1>Oops!</h1>
+    <p>Couldn't find that page</p>
+    <p>
+      <Link to="/">&larr; Home</Link>
+    </p>
   </div>
-)
-
-export default NotFoundPage
+);
