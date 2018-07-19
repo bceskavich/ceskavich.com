@@ -10,10 +10,13 @@ const AppContainer = styled.div`
   font-family: 'Source Sans Pro', 'Museo Sans', Arial, 'Lucida Grande',
     sans-serif;
   max-width: 1024px;
-  margin: 75px auto 0px auto;
+  margin: 75px auto;
   color: ${baseColor};
   @media screen and (max-width: 1099px) {
     padding: 0px 25px;
+  }
+  @media screen and (max-width: 800px) {
+    margin: 40px auto;
   }
   a {
     color: ${accentColor};
