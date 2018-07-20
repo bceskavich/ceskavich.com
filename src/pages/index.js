@@ -47,7 +47,7 @@ export default () => (
     <AboutChunk>
       You can look through a list of my current and past{' '}
       <Link to="/projects">projects</Link>, which I update occasionally. You can
-      also get my <Link to="/resume">resume</Link>.
+      also read over my <Link to="/resume">resume</Link>.
     </AboutChunk>
     <AboutChunk>
       My email is{' '}

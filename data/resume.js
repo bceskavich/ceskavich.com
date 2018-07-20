@@ -27,8 +27,7 @@ module.exports = {
         'SCSS / CSS',
         'Elixir',
         'Java',
-        'SQL',
-        'Elm'
+        'SQL'
       ]
     },
     {
@@ -54,9 +53,10 @@ module.exports = {
       location: 'New York City',
       date: 'July 2017 – Present',
       bullets: [
-        'Built improvements to Vox Media’s editorial content search interface including an Elasticsearch index versioning system and a keyword query search DSL',
-        'Coordinated a multi-month project to migrate Chorus’ user authentication system with zero user downtime. Worked with Redis, GraphQL, Node, and Ruby on Rails to build parts of the new system.',
-        'Built new Node command-line tools for running data migrations on Vox Media’s CMS data',
+        'Built a search pipeline grounded in Elasticsearch for our editorial dashboard. This work included creating an index versioning system and support for a custom keyword search DSL.',
+        'Coordinated a multi-month project to migrate our CMS’s user authentication system while ensuring zero user downtime. Worked with Redis, GraphQL, Node, and Ruby on Rails to build parts of the new system.',
+        'Built command-line tools for managing long-running data migrations on our CMS’s documents',
+        'Planned and implemented a new user permissions authorization system used by multiple services associated with our CMS',
         'Mentoring a software engineering intern in summer 2018'
       ]
     },
@@ -66,9 +66,9 @@ module.exports = {
       location: 'New York City',
       date: 'February 2016 – June 2017',
       bullets: [
-        'Core member of the Anthem team. Tasked with rebuilding the user-facing editor interface for Vox Media’s publishing platform [Chorus](https://getchorus.voxmedia.com/) as a collaborative, rich text editing tool. Contributed many core features written in a full-stack JavaScript environment.',
-        'Shipped iterative improvements to Vox Media’s autosave pipeline for concurrent, conflict-free editing. Updates included: improved conflict resolution, extended the system to handle more content types, wrote a server-side interface for pushing updates to active clients.',
-        'Regularly presented product features in team-wide reviews and implemented feedback from designers and product leaders',
+        'Part of the team that rebuilt the editor interface for Vox Media’s CMS [Chorus](https://getchorus.voxmedia.com/) as a collaborative, rich-text-driven tool. Contributed many core features written in a full-stack JavaScript environment.',
+        'Shipped iterative improvements to Vox Media’s autosave pipeline for concurrent, conflict-free editing. Updates included: improved conflict resolution capabilities, extended the system to handle multiple content schemas, wrote a server-side interface for pushing updates to active clients.',
+        'Regularly presented product features in team-wide reviews. Implemented feedback from designers and product leaders.',
         'Mentored a software engineering intern in summer 2016'
       ]
     },
@@ -78,7 +78,7 @@ module.exports = {
       location: 'New York City',
       date: 'May 2015 – August 2015',
       bullets: [
-        'As the engineer for a product intern team tasked with creating a production-ready application from scratch, built HelloBacker, a webapp for matching event planners with event sponsorships',
+        'Built HelloBacker, a webapp for matching event planners with event sponsorships. Served as the engineer for the intern product team tasked with creating a production-ready application from scratch over the summer.',
         'Built the project in a full-stack JavaScript environment, working for the first time with React and Flux on the front-end and Express and Bookshelf on the Node backend'
       ]
     },
