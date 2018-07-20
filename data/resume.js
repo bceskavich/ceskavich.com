@@ -57,6 +57,7 @@ module.exports = {
         'Coordinated a multi-month project to migrate our CMS’s user authentication system while ensuring zero user downtime. Worked with Redis, GraphQL, Node, and Ruby on Rails to build parts of the new system.',
         'Built command-line tools for managing long-running data migrations on our CMS’s documents',
         'Planned and implemented a new user permissions authorization system used by multiple services associated with our CMS',
+        'Regularly helps onboard other engineers to our CMS ecosystem, documenting and explaining the intricacies of our content model and tooling',
         'Mentoring a software engineering intern in summer 2018'
       ]
     },
