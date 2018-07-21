@@ -12,6 +12,13 @@ module.exports = {
       options: {
         fonts: ['source sans pro:400,600,700']
       }
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      trackingId: 'UA-45414156-1',
+      head: false,
+      anonymize: true,
+      respectDNT: true
     }
   ]
 };
