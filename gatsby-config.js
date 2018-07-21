@@ -15,10 +15,12 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
-      trackingId: 'UA-45414156-1',
-      head: false,
-      anonymize: true,
-      respectDNT: true
+      options: {
+        trackingId: 'UA-45414156-1',
+        head: false,
+        anonymize: true,
+        respectDNT: true
+      }
     }
   ]
 };
