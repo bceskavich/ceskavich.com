@@ -56,7 +56,7 @@ export default () => (
       </em>
     </AboutChunk>
     <AboutChunk>
-      My last name is pronounced <em>SES</em>-kah-vitch
+      My last name is pronounced <em>SES</em>-kuh-vitch
     </AboutChunk>
     <AboutChunk>You can find me on your favorite websites:</AboutChunk>
     <LinksList>
