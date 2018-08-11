@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "ceskavich.com",
+  "description": "Billy Ceskavich's personal homepage",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Billy Ceskavich <bceskavich@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.273",
-    "gatsby-link": "^1.6.40",
+    "gatsby": "^1.9.277",
+    "gatsby-link": "^1.6.46",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-react-helmet": "^2.0.10",
