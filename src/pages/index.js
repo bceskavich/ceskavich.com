@@ -31,13 +31,19 @@ export default () => (
       <TitleText>Billy Ceskavich</TitleText>
     </Title>
     <AboutChunk>
-      I write software for the web. I currently work for{' '}
-      <a href="https://product.voxmedia.com/pages/our-team">Vox Media</a> as a
-      full-stack engineer contributing to our publishing platform{' '}
-      <a href="https://getchorus.voxmedia.com/">Chorus</a>.
+      I write software for the web. Currently, I’m on a{' '}
+      <a href="https://twitter.com/ceskavich/status/1052581858834309120">
+        short break
+      </a>.
     </AboutChunk>
     <AboutChunk>
-      Previously, I was in school. Specifically, from 2010 – 2015 at the
+      Previously, I worked for{' '}
+      <a href="https://product.voxmedia.com/pages/our-team">Vox Media</a> as a
+      full-stack engineer contributing to the{' '}
+      <a href="https://getchorus.voxmedia.com/">Chorus</a> publishing platform.
+    </AboutChunk>
+    <AboutChunk>
+      Before that, I was in school. Specifically, from 2010 – 2015 at the
       Syracuse University <a href="https://ischool.syr.edu/">iSchool</a>. During
       that time, I held engineering and product internships at{' '}
       <a href="http://www.madebymany.com/">Made by Many</a>,{' '}
