@@ -31,10 +31,8 @@ export default () => (
       <TitleText>Billy Ceskavich</TitleText>
     </Title>
     <AboutChunk>
-      I write software for the web. Currently, I’m on a{' '}
-      <a href="https://twitter.com/ceskavich/status/1052581858834309120">
-        short break
-      </a>.
+      I write software for the web. Currently, I’m a senior engineer at{' '}
+      <a href="https://frame.io/">Frame.io</a>.
     </AboutChunk>
     <AboutChunk>
       Previously, I worked for{' '}

@@ -48,10 +48,17 @@ module.exports = {
   ],
   experience: [
     {
-      company: '[Vox Media](https://product.voxmedia.com/)',
-      title: 'Full-Stack Engineer 2',
+      company: '[Frame.io](https://frame.io/)',
+      title: 'Senior Full Stack Engineer',
       location: 'New York City',
-      date: 'July 2017 – Present',
+      date: 'November 2018 – Present',
+      bullets: []
+    },
+    {
+      company: '[Vox Media](https://product.voxmedia.com/)',
+      title: 'Full Stack Engineer 2',
+      location: 'New York City',
+      date: 'July 2017 – October 2018',
       bullets: [
         'Built a search pipeline grounded in Elasticsearch for our editorial dashboard. This work included creating an index versioning system and support for a custom keyword search DSL.',
         'Coordinated a multi-month project to migrate our CMS’s user authentication system while ensuring zero user downtime. Worked with Redis, GraphQL, Node, and Ruby on Rails to build parts of the new system.',
@@ -63,7 +70,7 @@ module.exports = {
     },
     {
       company: '[Vox Media](https://product.voxmedia.com/)',
-      title: 'Full-Stack Engineer',
+      title: 'Full Stack Engineer',
       location: 'New York City',
       date: 'February 2016 – June 2017',
       bullets: [
