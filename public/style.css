@@ -1,0 +1,63 @@
+.container {
+  font-family: "Source Sans Pro", "Museo Sans", Arial, "Lucida Grande", sans-serif;
+  max-width: 1024px;
+  margin: 75px auto;
+  color: #0e1419;
+}
+
+@media screen and (max-width: 1099px) {
+  .container {
+    padding: 0px 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    margin: 40px auto;
+  }
+}
+
+.container a,
+.container a:visited {
+  color: #0e1419;
+}
+
+.container a:hover  {
+  color: #f273bc;
+
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 50px;
+  }
+}
+
+.title span {
+  border-bottom: 6px solid #0e1419;
+}
+
+.about-chunk {
+  max-width: 600px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.links-list {
+  padding-left: 20px;
+}
+
+.links-list li {
+  margin-bottom: 5px;
+}

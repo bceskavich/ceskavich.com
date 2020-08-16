@@ -1,3 +1,3 @@
 # ceskavich.com
 
-Built with [GatsbyJS](https://www.gatsbyjs.org/)
+My super simple personal homepage. Last update: August 2020.
