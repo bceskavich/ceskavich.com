@@ -51,13 +51,32 @@
 .about-chunk {
   max-width: 600px;
   line-height: 1.5;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
-.links-list {
-  padding-left: 20px;
+.links-table {
+  border-spacing: 0px;
 }
 
-.links-list li {
-  margin-bottom: 5px;
+.links-table tr {
+  height: 28px;
+  vertical-align: top;
+}
+
+.title-cell {
+  padding-right: 25px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.about-chunk,
+.links-table {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 355px) {
+  .about-chunk,
+  .links-table {
+    font-size: 13px;
+  }
 }
