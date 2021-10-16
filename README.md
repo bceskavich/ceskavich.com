@@ -1,3 +1,3 @@
 # ceskavich.com
 
-My super simple personal homepage. Last update: August 2020.
+My super simple personal homepage. 
