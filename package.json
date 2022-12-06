@@ -3,7 +3,7 @@
   "description": "Billy Ceskavich's personal homepage",
   "author": "Billy Ceskavich <bceskavich@gmail.com>",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   },
   "scripts": {
     "start": "node index.js"
